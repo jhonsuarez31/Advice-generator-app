@@ -1,0 +1,82 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+ 
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+  background-color: hsl(217, 19%, 24%);
+  max-width: 15em;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5em;
+  position: relative;
+}
+.card h5 {
+  padding: 1.5em 0em;
+  color: hsl(150, 100%, 66%);
+  font-weight: normal;
+  font-size: 0.6em;
+}
+.card p {
+  margin: 0em 1em;
+  padding-bottom: 0.2em;
+  color: hsl(193, 38%, 86%);
+  font-size: 0.9em;
+}
+#divider-pattern {
+  width: 100%;
+  padding: 1em;
+}
+.buton {
+  width: 1.7em;
+  height: 1.7em;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -0.9em;
+}
+.btn {
+  cursor: pointer;
+}
+#image-button {
+  width: 50%;
+  height: 50%;
+  background-color: hsl(150, 100%, 66%);
+}
+
+.btn:hover {
+  -moz-box-shadow: 0 0 15px 15px hsl(150, 100%, 66%);
+  -webkit-box-shadow: 0 0 15px 15px hsl(150, 100%, 66%);
+  box-shadow: 0 0 15px 15px hsl(150, 100%, 66%);
+}
+@media (max-width: 580px) {
+    .container{
+        padding:0 0.5em ;
+    }
+    .card {
+        padding: 0 0.25em;
+    }
+    
+}
